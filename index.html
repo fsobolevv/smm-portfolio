@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -29,41 +29,61 @@
       ВЕРСИЯ НА РУССКОМ
     </button>
 
-    <main class="hero">
-      <div class="hero__content">
-        <img
-          class="hero__photo"
-          src="/images/main.png"
-          alt="Portrait of an SMM producer"
-          id="heroPhoto"
-        />
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <img
+            class="hero__photo"
+            id="heroPhoto"
+            src="./images/main.png"
+            alt="Portrait of an SMM producer"
+          />
 
-        <div class="hero__info">
+          <div class="hero__info">
+            <h1 class="hero__title">SMM PRODUCTION</h1>
+
             <p class="hero__subtitle" id="heroSubtitle">
-            7+ YEARS OF EXPERIENCE
-          </p>
-          <h1 class="hero__title">SMM PRODUCTION</h1>
+              7+ YEARS OF EXPERIENCE
+            </p>
 
-          
+            <nav class="navigation" aria-label="Main navigation">
+              <a
+                class="navigation__link"
+                href="./about.html"
+                data-nav="about"
+              >
+                ABOUT ME
+              </a>
 
-          <nav class="navigation" aria-label="Main navigation">
-            <a class="navigation__link" href="#about" data-nav="about">
-              ABOUT ME
-            </a>
-            <a class="navigation__link" href="#smm" data-nav="smm">
-              SMM PRODUCTION
-            </a>
-            <a class="navigation__link" href="#ai-content" data-nav="ai">
-              AI-CONTENT
-            </a>
-            <a class="navigation__link" href="#coding" data-nav="coding">
-              CODING
-            </a>
-          </nav>
+              <a
+                class="navigation__link"
+                href="#smm"
+                data-nav="smm"
+              >
+                SMM PRODUCTION
+              </a>
+
+              <a
+                class="navigation__link"
+                href="#ai"
+                data-nav="ai"
+              >
+                AI-CONTENT
+              </a>
+
+              <a
+                class="navigation__link"
+                href="#coding"
+                data-nav="coding"
+              >
+                CODING
+              </a>
+            </nav>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

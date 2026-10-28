@@ -6,6 +6,7 @@ const languageSwitch = document.querySelector('#languageSwitch');
 const photo = document.querySelector('#heroPhoto');
 const navigation = document.querySelector('.navigation');
 const heroInfo = document.querySelector('.hero__info');
+const aboutLink = document.querySelector('[data-nav="about"]');
 
 const translations = {
   en: {
@@ -88,6 +89,9 @@ function updateLanguage() {
 
   document.querySelector('[data-nav="coding"]').textContent =
     language.links.coding;
+
+  // Передаём выбранный язык странице «Обо мне»
+  aboutLink.href = `./about.html?lang=${currentLanguage}`;
 }
 
 /* Плавная смена подзаголовка */
@@ -120,7 +124,7 @@ function startPhraseRotation() {
   );
 }
 
-/* Плавное переключение языка */
+/* Переключение языка */
 
 languageSwitch.addEventListener('click', () => {
   if (isChangingLanguage) {

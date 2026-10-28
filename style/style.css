@@ -337,3 +337,263 @@ a {
     transition: none;
   }
 }
+
+
+/* =================================
+   ABOUT PAGE
+   ================================= */
+
+.about-page {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Golos Text', sans-serif;
+}
+
+/* Верхняя панель */
+
+.about-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  min-height: 76px;
+  padding: 20px 6%;
+}
+
+.about-header .language-switch {
+  position: static;
+}
+
+.about-back {
+  position: absolute;
+  left: 6%;
+
+  font-size: 11px;
+  letter-spacing: 0.04em;
+
+  transition: color 0.25s ease;
+}
+
+.about-back:hover,
+.about-footer a:hover {
+  color: var(--color-accent);
+}
+
+/* Основное содержимое */
+
+.about-main {
+  width: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 0 40px;
+
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+/* Заголовок */
+
+.about-intro {
+  max-width: 950px;
+  margin-bottom: 64px;
+}
+
+.about-eyebrow {
+  margin: 0 0 24px;
+
+  color: var(--color-accent);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.about-intro h1 {
+  margin: 0;
+
+  font-size: clamp(40px, 6.5vw, 82px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.about-lead {
+  max-width: 700px;
+  margin: 28px 0 0;
+
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.7;
+}
+
+/* Профессиональные показатели */
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+
+  padding: 30px 0;
+  border-top: 1px solid #d8d0c5;
+  border-bottom: 1px solid #d8d0c5;
+}
+
+.about-stat {
+  min-width: 0;
+}
+
+.about-number {
+  display: block;
+  margin-bottom: 14px;
+
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.about-stat p {
+  max-width: 220px;
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Описание и образование */
+
+.about-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+
+  padding: 48px 0;
+  border-bottom: 1px solid #d8d0c5;
+}
+
+.about-section-label p {
+  margin: 4px 0 0;
+
+  color: var(--color-accent);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.about-description {
+  max-width: 760px;
+}
+
+.about-description p {
+  margin: 0 0 22px;
+
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.8;
+}
+
+.about-description p:last-child {
+  margin-bottom: 0;
+}
+
+.about-field {
+  font-weight: 600;
+}
+
+/* Нижняя ссылка */
+
+.about-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 32px 0 12px;
+}
+
+.about-footer a {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  transition: color 0.25s ease;
+}
+
+/* Планшеты и телефоны */
+
+@media (max-width: 700px) {
+  .about-header {
+    min-height: 68px;
+    padding: 16px 4%;
+  }
+
+  .about-back {
+    left: 4%;
+    font-size: 10px;
+  }
+
+  .about-header .language-switch {
+    padding: 8px 10px;
+    font-size: 9px;
+  }
+
+  .about-main {
+    width: 92%;
+    padding-top: 44px;
+  }
+
+  .about-intro {
+    margin-bottom: 42px;
+  }
+
+  .about-intro h1 {
+    font-size: clamp(36px, 8vw, 56px);
+  }
+
+  .about-lead {
+    margin-top: 22px;
+  }
+
+  .about-stats {
+    gap: 16px;
+    padding: 24px 0;
+  }
+
+  .about-number {
+    font-size: clamp(30px, 7vw, 46px);
+  }
+
+  .about-stat p {
+    font-size: 11px;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 32px 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .about-back {
+    max-width: 45%;
+    line-height: 1.5;
+  }
+
+  .about-header .language-switch {
+    max-width: 52%;
+    text-align: center;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-number {
+    margin-bottom: 8px;
+  }
+}
+
+/* Учитываем системную настройку уменьшения анимации */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-main {
+    animation: none;
+  }
+}
