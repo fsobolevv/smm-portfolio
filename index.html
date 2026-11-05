@@ -1,89 +1,464 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>SMM Production — Portfolio</title>
-    <meta
-      name="description"
-      content="SMM production portfolio: content, marketing and AI."
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <title>SMM PRODUCTION</title>
 
-  <body>
-    <button
-      class="language-switch"
-      id="languageSwitch"
-      type="button"
-      aria-label="Switch to Russian"
-    >
-      ВЕРСИЯ НА РУССКОМ
-    </button>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <main>
-      <section class="hero">
-        <div class="hero__content">
-          <img
-            class="hero__photo"
-            id="heroPhoto"
-            src="./images/main.png"
-            alt="Portrait of an SMM producer"
-          />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+</head>
 
-          <div class="hero__info">
-            <h1 class="hero__title">SMM PRODUCTION</h1>
+<body>
 
-            <p class="hero__subtitle" id="heroSubtitle">
-              7+ YEARS OF EXPERIENCE
+  <!-- LANGUAGE SWITCH -->
+  <button
+    class="language-switch"
+    id="languageSwitch"
+    type="button"
+    aria-label="Switch to Russian"
+  >
+    ВЕРСИЯ НА РУССКОМ
+  </button>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+
+      <div class="hero__content">
+
+        <img
+          class="hero__photo"
+          id="heroPhoto"
+          src="./images/main.png"
+          alt="Portrait of an SMM producer"
+        >
+
+        <div class="hero__info">
+
+          <h1 class="hero__title">
+            SMM PRODUCTION
+          </h1>
+
+          <p class="hero__subtitle" id="heroSubtitle">
+            7+ YEARS OF EXPERIENCE
+          </p>
+
+          <nav
+            class="navigation"
+            aria-label="Main navigation"
+          >
+
+            <a
+              class="navigation__link"
+              href="#about"
+              data-nav="about"
+            >
+              ABOUT ME
+            </a>
+
+            <a
+              class="navigation__link"
+              href="#projects"
+              data-nav="projects"
+            >
+              PROJECTS
+            </a>
+
+          </nav>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-main" id="about">
+
+      <div class="about-intro">
+
+        <p class="about-eyebrow" data-i18n="eyebrow">
+          ABOUT ME
+        </p>
+
+        <h2 data-i18n="title">
+          Strategy. People. Production.
+        </h2>
+
+        <p class="about-lead" data-i18n="lead">
+          7 years in content marketing. 3 years in a leadership position.
+        </p>
+
+      </div>
+
+
+      <!-- STATISTICS -->
+      <div class="about-stats">
+
+        <div class="about-stat">
+          <span class="about-number">7+</span>
+          <p data-i18n="stat1">
+            YEARS IN CONTENT MARKETING
+          </p>
+        </div>
+
+        <div class="about-stat">
+          <span class="about-number">3</span>
+          <p data-i18n="stat2">
+            YEARS IN A LEADERSHIP ROLE
+          </p>
+        </div>
+
+        <div class="about-stat">
+          <span class="about-number">400K+</span>
+          <p data-i18n="stat3">
+            COMBINED SOCIAL MEDIA AUDIENCE
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- PROFILE -->
+      <div class="about-details">
+
+        <div class="about-section-label">
+          <p data-i18n="profileLabel">
+            PROFILE
+          </p>
+        </div>
+
+        <div class="about-description">
+
+          <p data-i18n="description1">
+            Building content strategies from scratch for projects
+            with different budgets and business objectives.
+          </p>
+
+          <p data-i18n="description2">
+            Driving content growth through marketing,
+            building communication between business and users.
+          </p>
+
+          <p data-i18n="description3">
+            Managing production processes and teams.
+            Experience managing accounts with a combined audience
+            of more than 400,000 followers.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- EDUCATION -->
+      <div class="about-education">
+
+        <div class="about-section-label">
+          <p data-i18n="educationLabel">
+            EDUCATION
+          </p>
+        </div>
+
+        <div class="about-field">
+
+          <h3 data-i18n="educationTitle">
+            Journalism
+          </h3>
+
+          <p data-i18n="education">
+            Higher education in journalism.
+          </p>
+
+        </div>
+
+        <div class="about-field">
+
+          <h3 data-i18n="additionalTitle">
+            Additional education
+          </h3>
+
+          <p data-i18n="additional">
+            Videography, video editing and content marketing.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+
+      <div class="projects-header">
+
+        <p
+          class="projects-eyebrow"
+          data-i18n="projectsEyebrow"
+        >
+          SELECTED WORK
+        </p>
+
+        <h2
+          class="projects-title"
+          data-i18n="projectsTitle"
+        >
+          Projects
+        </h2>
+
+        <p
+          class="projects-lead"
+          data-i18n="projectsLead"
+        >
+          Selected projects and collaborations.
+        </p>
+
+      </div>
+
+
+      <div class="projects-grid">
+
+        <!-- MODUM LAB -->
+        <article class="project-card">
+
+          <div class="project-card__visual">
+            <div class="project-card__illustration illustration--modum">
+              <span>01</span>
+            </div>
+          </div>
+
+          <div class="project-card__content">
+
+            <div class="project-card__top">
+              <h3 class="project-card__title">
+                modum lab
+              </h3>
+
+              <span class="project-card__category">
+                B2B
+              </span>
+            </div>
+
+            <p
+              class="project-card__description"
+              data-i18n="projectModum"
+            >
+              Контент-стратегия для VR/AR продукта.
+              Аккредитованная IT-компания, резидент «Сколково».
             </p>
 
-            <nav class="navigation" aria-label="Main navigation">
-              <a
-                class="navigation__link"
-                href="./about.html"
-                data-nav="about"
-              >
-                ABOUT ME
-              </a>
-
-              <a
-                class="navigation__link"
-                href="#smm"
-                data-nav="smm"
-              >
-                SMM PRODUCTION
-              </a>
-
-              <a
-                class="navigation__link"
-                href="#ai"
-                data-nav="ai"
-              >
-                AI-CONTENT
-              </a>
-
-              <a
-                class="navigation__link"
-                href="#coding"
-                data-nav="coding"
-              >
-                CODING
-              </a>
-            </nav>
           </div>
-        </div>
-      </section>
-    </main>
 
-    <script type="module" src="./src/main.js"></script>
-  </body>
+        </article>
+
+
+        <!-- ALESHA -->
+        <article class="project-card">
+
+          <div class="project-card__visual">
+            <div class="project-card__illustration illustration--alesha">
+              <span>02</span>
+            </div>
+          </div>
+
+          <div class="project-card__content">
+
+            <div class="project-card__top">
+              <h3
+                class="project-card__title"
+                data-i18n="projectAleshaTitle"
+              >
+                Благотворительный фонд «Алёша»
+              </h3>
+
+              <span class="project-card__category">
+                НКО
+              </span>
+            </div>
+
+            <p
+              class="project-card__description"
+              data-i18n="projectAlesha"
+            >
+              Крупнейший* благотворительный фонд России.
+            </p>
+
+            <p
+              class="project-card__note"
+              data-i18n="projectAleshaNote"
+            >
+              *По количеству пожертвований среди благотворительных
+              фондов. Данные «Русфонд.Навигатор». 2024.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- THE IDEA -->
+        <article class="project-card">
+
+          <div class="project-card__visual">
+            <div class="project-card__illustration illustration--idea">
+              <span>03</span>
+            </div>
+          </div>
+
+          <div class="project-card__content">
+
+            <div class="project-card__top">
+              <h3 class="project-card__title">
+                The IDEA
+              </h3>
+
+              <span class="project-card__category">
+                B2C
+              </span>
+            </div>
+
+            <p
+              class="project-card__description"
+              data-i18n="projectIdea"
+            >
+              Дизайнерская мебель с собственным производством
+              в Санкт-Петербурге.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- SEROTONIN -->
+        <article class="project-card">
+
+          <div class="project-card__visual">
+            <div class="project-card__illustration illustration--serotonin">
+              <span>04</span>
+            </div>
+          </div>
+
+          <div class="project-card__content">
+
+            <div class="project-card__top">
+              <h3
+                class="project-card__title"
+                data-i18n="projectSerotoninTitle"
+              >
+                Медицинский центр «Серотонин»
+              </h3>
+
+              <span class="project-card__category">
+                B2C
+              </span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROSCHE -->
+        <article class="project-card">
+
+          <div class="project-card__visual">
+            <div class="project-card__illustration illustration--prosche">
+              <span>05</span>
+            </div>
+          </div>
+
+          <div class="project-card__content">
+
+            <div class="project-card__top">
+              <h3
+                class="project-card__title"
+                data-i18n="projectProscheTitle"
+              >
+                Платформа Проще
+              </h3>
+
+              <span class="project-card__category">
+                B2B
+              </span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- MEDICAL SYSTEMS -->
+        <article class="project-card">
+
+          <div class="project-card__visual">
+            <div class="project-card__illustration illustration--systems">
+              <span>06</span>
+            </div>
+          </div>
+
+          <div class="project-card__content">
+
+            <div class="project-card__top">
+              <h3
+                class="project-card__title"
+                data-i18n="projectSystemsTitle"
+              >
+                Медицинские системы и технологии
+              </h3>
+
+              <span class="project-card__category">
+                B2B
+              </span>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACTS -->
+    <section class="contacts-section" id="contacts">
+
+      <p
+        class="contacts-eyebrow"
+        data-i18n="contactsEyebrow"
+      >
+        CONTACTS
+      </p>
+
+      <h2 data-i18n="contactsTitle">
+        Let's work together.
+      </h2>
+
+    </section>
+
+  </main>
+
+
+  <!-- MAIN SCRIPT -->
+  <script
+    type="module"
+    src="./src/main.js"
+  ></script>
+
+</body>
+
 </html>
