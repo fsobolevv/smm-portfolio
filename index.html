@@ -36,45 +36,63 @@
 
       <div class="hero__content">
 
-        <img
-          class="hero__photo"
-          id="heroPhoto"
-          src="./images/main.png"
-          alt="Portrait of an SMM producer"
-        >
-
-        <div class="hero__info">
+        <!-- FIRST SCREEN -->
+        <div class="hero__screen hero__screen--intro">
 
           <h1 class="hero__title">
             SMM PRODUCTION
           </h1>
 
-          <p class="hero__subtitle" id="heroSubtitle">
-            7+ YEARS OF EXPERIENCE
-          </p>
+          <a href="#hero-second" class="scroll-down">
+            ЛИСТАЙТЕ ВНИЗ ↓
+          </a>
 
-          <nav
-            class="navigation"
-            aria-label="Main navigation"
+        </div>
+
+
+        <!-- SECOND SCREEN -->
+        <div
+          class="hero__screen hero__screen--content"
+          id="hero-second"
+        >
+
+          <img
+            class="hero__photo"
+            id="heroPhoto"
+            src="./images/main.png"
+            alt="Portrait of an SMM producer"
           >
 
-            <a
-              class="navigation__link"
-              href="#about"
-              data-nav="about"
-            >
-              ABOUT ME
-            </a>
+          <div class="hero__info">
 
-            <a
-              class="navigation__link"
-              href="#projects"
-              data-nav="projects"
-            >
-              PROJECTS
-            </a>
+            <p class="hero__subtitle" id="heroSubtitle">
+              7+ YEARS OF EXPERIENCE
+            </p>
 
-          </nav>
+            <nav
+              class="navigation"
+              aria-label="Main navigation"
+            >
+
+              <a
+                class="navigation__link"
+                href="#about"
+                data-nav="about"
+              >
+                ABOUT ME
+              </a>
+
+              <a
+                class="navigation__link"
+                href="#projects"
+                data-nav="projects"
+              >
+                PROJECTS
+              </a>
+
+            </nav>
+
+          </div>
 
         </div>
 

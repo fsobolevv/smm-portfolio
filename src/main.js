@@ -138,13 +138,12 @@ const translations = {
       projects: 'ПРОЕКТЫ',
     },
 
-    phrases: [
-      'БОЛЕЕ 7 ЛЕТ ОПЫТА',
-      '3 ГОДА НА РУКОВОДЯЩЕЙ ДОЛЖНОСТИ',
-      'РОСТ КОНТЕНТА ЧЕРЕЗ МАРКЕТИНГ',
-      'СВЯЗЬ МЕЖДУ БИЗНЕСОМ И ПОЛЬЗОВАТЕЛЯМИ',
-    ],
-
+  phrases: [
+  'Более 7 лет опыта',
+  '3 года на руководящей должности',
+  'Рост контента через маркетинг',
+  'Связь между бизнесом и пользователями',
+],
 
     /* ABOUT */
 
@@ -264,9 +263,37 @@ function updateLanguage() {
 
 
   // Hero
-  photo.alt = language.photoAlt;
+  // Hero
+photo.alt = language.photoAlt;
+
+if (currentLanguage === 'ru') {
+
+  heroTitle.classList.add('hero__title--ru');
+
+  heroTitle.setAttribute('aria-label', language.heroTitle);
+
+  heroTitle.innerHTML = `
+  Пр<span class="hero__image-holder">
+    <span class="hero__image-letter">
+      <img src="./images/003.png" alt="">
+    </span>
+    <span class="hero__image-caption">Вас увидят</span>
+  </span>дакшн для с<span class="hero__image-holder">
+    <span class="hero__image-letter">
+      <img src="./images/004.png" alt="">
+    </span>
+    <span class="hero__image-caption">О вас заговорят</span>
+  </span>цсетей
+`;
+} else {
+
+  heroTitle.classList.remove('hero__title--ru');
+
+  heroTitle.removeAttribute('aria-label');
 
   heroTitle.textContent = language.heroTitle;
+
+}
 
   navigation.setAttribute(
     'aria-label',
