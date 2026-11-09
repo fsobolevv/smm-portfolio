@@ -1315,3 +1315,83 @@ a {
 .hero:has(.hero__title--ru) .hero__subtitle {
   text-transform: none !important;
 }
+
+/* =================================
+   PROJECT DETAIL PAGE
+================================= */
+
+.project-detail {
+  width: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  min-height: 100vh;
+}
+
+.project-detail h1 {
+  margin: 0;
+
+  font-size: clamp(40px, 6.5vw, 82px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+/* =================================
+   PROJECT CARD BUTTON
+================================= */
+
+.project-card__button {
+  display: inline-block;
+  margin-top: 18px;
+
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+
+  color: var(--color-accent);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.project-card__button:hover {
+  opacity: 0.7;
+  transform: translateX(4px);
+}
+
+/* =================================
+   PROJECT DETAIL PAGES
+================================= */
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Golos Text', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.project-detail {
+  width: 88%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+.project-detail h1 {
+  margin: 0;
+  font-family: 'Golos Text', sans-serif;
+  font-size: clamp(40px, 6.5vw, 82px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  color: var(--color-text);
+}
